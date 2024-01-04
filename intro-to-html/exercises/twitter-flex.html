@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Twitter Practice</title>
+</head>
+
+<style>
+    div {
+        font-family: Arial;
+    }
+    .user-pic {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 30px;
+    }
+
+    .post-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .tweet-column {
+        padding-left: 10px;
+        width: 340px;
+    }
+    .tweet-header {
+        display:flex;
+        margin-bottom: 5px;
+    }
+
+    .tweet-author {
+        font-weight: 700;
+        margin-right: 5px;
+    }
+
+    .author-handle {
+        color:rgb(88, 88, 88);
+    }
+
+    .tweet-content {
+        margin-bottom: 12px;
+    }
+
+    .video-preview {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-width: 1px;
+        border-color: rgb(200, 200, 200);
+        border-style: solid;
+        border-radius: 15px;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    .thumbnail-column {
+        width: 150px;
+        height: 90px;
+        background-color: rgb(200, 200, 200);
+        margin-right: 12px;
+    }
+
+    .youtube-link {
+        color:rgb(80, 80, 80);
+        margin-bottom: 5px;
+    }
+</style>
+<body>
+    <div class="post-container">
+        <div class="user-image-column">
+            <img class="user-pic" src="icon3.jpg">
+        </div>
+        
+        <div class="tweet-column">
+            <div class="tweet-header">
+                <div class="tweet-author">supersimple.dev</div>
+                <div class="author-handle">@SuperSimpleDev</div>
+            </div>
+
+            <div class="tweet-content">
+                What is backend web development? A complete overview. New video is up!
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-column"></div>
+                <div class="video-info-column">
+                    <div class="youtube-link">youtube.com</div>
+                    <div class="video-title">Backend web development - a complete overview (2021)</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>

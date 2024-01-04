@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Flexbox Exercise 1</title>
+
+    <style>
+        p {
+            font-family: Arial;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .profile-pic {
+            width: 60px;
+            height: 60px;
+            border-radius: 30px;
+            object-fit: cover;
+            margin-right: 15px;
+        }
+
+        .acc-details {
+            width: 200px
+        }
+
+        .name {
+            font-weight: bold;
+            margin-bottom: 3px;
+        }
+
+        .display-name {
+            color: rgb(150, 150, 150);
+            margin-bottom: 5px;
+        }
+
+        .popular-tag {
+            color: rgb(150, 150, 150);
+            font-size: 14px;
+        }
+
+        .follow-button {
+            background-color: rgb(29, 155, 240);
+            color: white;
+            border: none;
+            font-size: 16px;
+            font-weight: bold;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <img class="profile-pic" src="icon1.jpg">
+       
+        <div class="acc-details"> 
+            <p class="name">Oliver</p>
+            <p class="display-name">the gamer cat</p>
+            <p class="popular-tag">Popular</p>
+        </div>
+
+        <button class="follow-button">Follow</button>
+    </div>
+
+    <div class="row">
+        <img class="profile-pic" src="icon2.jpg">
+       
+        <div class="acc-details"> 
+            <p class="name">Mimi</p>
+            <p class="display-name">Cool kid</p>
+            <p class="popular-tag">Popular</p>
+        </div>
+
+        <button class="follow-button">Follow</button>
+    </div>
+
+    <div class="row">
+        <img class="profile-pic" src="icon3.jpg">
+       
+        <div class="acc-details"> 
+            <p class="name">Rex</p>
+            <p class="display-name">Happy doggo?</p>
+            <p class="popular-tag">Popular</p>
+        </div>
+
+        <button class="follow-button">Follow</button>
+    </div>
+</body>
+</html>

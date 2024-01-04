@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Facebook</title>
+        <style>
+            body {
+                background-color: rgb(206, 206, 206);
+                font-family: Arial;
+            }
+
+            .header {
+                background-color: white;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 50px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .left-section {
+                width: 150px;
+                display: flex;
+                align-items: center;
+                margin-left: 50px;
+            }
+
+            .profile-pic {
+                width: 40px;
+                height: 40px;
+                border-radius: 20px;
+            }
+
+            .name {
+                margin-left: 8px;
+                font-weight: bold;
+                font-size: 14px;
+            }
+
+            .right-section {
+                margin-right: 40px;
+            }
+
+            .add-btn, .message-btn {
+                font-weight: bold;
+                font-size: 12px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                padding-left: 12px;
+                padding-right: 12px;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: 0.15s;
+            }
+
+            .add-btn {
+                color: white;
+                background-color: rgb(17, 144, 230);
+                border: none;
+                margin-right: 5px;;
+            }
+
+            .add-btn:hover {
+                opacity: 0.7;
+            }
+
+            .message-btn {
+                border: none;
+                background-color: rgb(228, 227, 227);
+            }
+
+            .message-btn:hover {
+                background-color: rgb(177, 177, 177);
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="left-section">
+                <div class="profile-pic-container">
+                     <img class="profile-pic" src="icon3.jpg"> 
+                </div>
+                <div class="name">Rex doggo</div>
+            </div>
+
+            <div class="right-section">
+                <button class="add-btn">Add Friend</button>
+                <button class="message-btn">Message</button>
+            </div>
+        </div>
+    </body>
+</html>

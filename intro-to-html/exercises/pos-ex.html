@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Position Exercise</title>
+
+        <style>
+            body {
+                height: 3000px;
+            }
+            .sidebar {
+                color: white;
+                background-color: green;
+                position: fixed;
+                right: 0;
+                bottom: 0;
+                top: 0;
+                width: 100px;
+            }
+
+            .overlay-element {
+                background-color: rgba(0, 0, 0, 0.6);
+                display:flex;
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .modal {
+                font-family: Arial;
+                display: flex;
+                flex-direction: column;
+                background-color: white;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                padding-left: 15px;
+                padding-right: 15px;
+                border-radius: 5px;
+                width: 300px;
+            }
+
+            .modal-title {
+                font-weight: bold;
+                font-size: 26px;
+                margin-bottom: 10px;
+            }
+
+            .modal-content{
+                margin-bottom: 10px;
+            }
+
+            .close-btn {
+                width: 50px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="sidebar">
+            right sidebar
+        </div>
+
+        <div class="overlay-element">
+            <div class="modal">
+                <div class="modal-title">Modal Title</div>
+                <div class="modal-content">This is a modal</div>
+                <button class="close-btn">Close</button>
+            </div>
+        </div>
+    </body>
+
+</html>
